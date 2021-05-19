@@ -1,3 +1,6 @@
+.hello {
+    color:green;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
