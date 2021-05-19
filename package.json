@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.0",
+    "postcss": "^8.2.15",
+    "tailwindcss": "^2.1.2"
+  },
+  "scripts": {
+    "dev": "gulp",
+    "build": "NODE_ENV=production gulp css",
+    "build-images": "gulp images"
+  }
+}
+
