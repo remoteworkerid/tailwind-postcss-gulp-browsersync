@@ -10,15 +10,42 @@
     </title>
 </head>
 <body class="bg-gray-100">
-    <div class="px-8 py-12"> <!--p-*, pt, pl, pr, pb,  -->
-        <img class="h-10" src="dist/images/logo.svg" alt="work logo"/> <!-- height -->
-        <img class="mt-6 rounded-lg shadow-2xl" src="dist/images/beach-work.jpg" alt="beach"/>
-        <h1 class="mt-6 text-2xl font-bold text-gray-900">You can be work here too! <span class="text-indigo-500">Prepare yourskill!</span></h1>
-        <p class="mt-2">
-            Create a new folder in our project's root directory named assets. We will be using this folder for storing all assets required in the project. Within this new folder, create separate folders for css & images. The compiled version of our CSS file will be stored in this folder by gulp task.
-        </p>
+<!--<body class="bg-gray-100 sm:bg-yellow-300 md:bg-green-300 lg:bg-pink-300 xl:bg-blue-300 2xl:bg-red-300">-->
+<!--<body class="bg-gray-100 sm:bg-yellow-300  2xl:bg-red-300">-->
+<!--
+breakpoint:
+sm 640
+md 768
+lg 1024
+xl 1280
+2xl 1536
+-->
+    <div class="grid lg:grid-cols-2 2xl:grid-cols-5">
+        <div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full xl:mr-0 2xl:col-span-2"> <!--p-*, pt, pl, pr, pb,  -->
+            <div class="xl:max-w-xl">
+            <img class="h-10" src="dist/images/logo.svg" alt="work logo"/> <!-- height -->
 
+            <img class="mt-6 rounded-lg shadow-2xl sm:mt-8 sm:h-64 sm:w-full sm:object-cover object-center lg:hidden"
+                 src="dist/images/beach-work.jpg"
+                 alt="beach"/>
+
+            <h1 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-8 sm:text-4xl lg:text-4xl">You can be work here too!!! <br/><span class="text-indigo-500">Prepare yourskill!</span></h1>
+            <p class="mt-2 text-gray-600 sm:mt-4 sm:text-xl">
+                Workcation helps you find work-friendly rentals in beautiful locations so you can enjoy
+                some nice weather even when you're not on vacation.
+            </p>
+            <div class="mt-4 sm:mt-6">
+                <a href="#" class="inline-block font-semibold text-sm
+                rounded-2xl bg-indigo-500 px-5 py-3 shadow-lg text-white uppercase tracking-wider">Book your escape!</a>
+            </div>
+        </div>
+        </div>
+    <div class="hidden lg:block relative 2xl:col-span-3">
+        <img class="absolute inset-0 w-full h-full object-cover object-center"
+         src="dist/images/beach-work.jpg"
+         alt="beach"/>
     </div>
+</div>
 
 </body>
 </html>
